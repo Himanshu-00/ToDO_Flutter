@@ -36,6 +36,9 @@ This app follows the **MVVM (Model-View-ViewModel)** architecture using `GetX` f
 
 ## Screens
 
+[Watch Demo Video](lib/ToDo_Task.mov)
+
+
 
 
 ### Task List View

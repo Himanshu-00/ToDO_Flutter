@@ -135,7 +135,8 @@ class TaskListView extends StatelessWidget {
                                     ),
                                     SizedBox(height: 4),
                                     Text(
-                                      '${task.description}\nDue: ${task.dueDate}',
+                                      _getPriorityLabel(task
+                                          .priority), // Converts priority value to a readable label
                                       style: TextStyle(
                                           color: Colors.grey, fontSize: 14),
                                     ),
@@ -169,6 +170,19 @@ class TaskListView extends StatelessWidget {
         child: Icon(Icons.add, color: Colors.white),
       ),
     );
+  }
+}
+
+String _getPriorityLabel(int priority) {
+  switch (priority) {
+    case 1:
+      return 'High';
+    case 2:
+      return 'Medium';
+    case 3:
+      return 'Low';
+    default:
+      return 'Unknown';
   }
 }
 
