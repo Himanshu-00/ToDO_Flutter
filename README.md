@@ -34,12 +34,6 @@ This app follows the **MVVM (Model-View-ViewModel)** architecture using `GetX` f
     └── task_list_view.dart
 ```
 
-## Screens
-
-[Watch Demo Video](lib/ToDo_Task.mov)
-
-
-
 
 ### Task List View
 
